@@ -35,7 +35,7 @@ if needs_sphinx > sphinx.__display_version__:
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.viewcode',
+    # 'sphinx.ext.viewcode',
     'sphinx.ext.imgmath',
     'sphinx.ext.napoleon',
     'sphinx.ext.autosummary',

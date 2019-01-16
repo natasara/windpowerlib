@@ -216,19 +216,3 @@ Additional functions used in the windpowerlib.
    tools.logarithmic_interpolation_extrapolation
    tools.gauss_distribution
    tools.estimate_turbulence_intensity
-
-
-ModelChain example
-==================
-
-The ``modelchain_example`` consists of the following functions.
-
-.. include:: example.rst
-
-TurbineClusterModelChain example
-================================
-
-The ``turbine_cluster_modelchain_example`` consists of the following functions
-as well as it uses functions of the ``modelchain_example``.
-
-.. include:: example_2.rst
