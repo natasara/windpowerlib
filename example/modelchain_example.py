@@ -1,6 +1,10 @@
 """
 The ``modelchain_example`` module shows a simple usage of the windpowerlib by
-using the :class:`~.modelchain.ModelChain` class.
+using the :class:`~.modelchain.ModelChain` class. The modelchains are
+implemented to ensure an easy start into the Windpowerlib. They work like
+models that combine all functions provided in the library. Via parameteres
+desired functions of the windpowerlib can be selected. For parameters not
+being specified default parameters are used.
 
 There are mainly three steps. First you have to import your weather data, then
 you need to specify your wind turbine, and in the last step call the
@@ -45,19 +49,9 @@ logging.debug("1. Get weather data")
 # documentation.
 
 # The data will be read into a pandas DataFrame with a MultiIndex.
-
 # The first level contains the variable name as string (e.g. 'wind_speed') and
 # the second level contains the height as integer at which it applies
 # (e.g. 10, if it was measured at a height of 10 m).
-
-# The first level will have the following columns:
-
-# wind speed: `wind_speed` in m/s
-# temperature `temperature` in K
-# roughness length `roughness_length` in m
-# pressure `pressure` in Pa
-
-
 
 # read csv file
 file = os.path.join(os.path.split(os.path.dirname(__file__))[0],
