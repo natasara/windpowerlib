@@ -29,11 +29,11 @@ class WindTurbine(object):
         Hub height of the wind turbine in m.
     rotor_diameter : None or float
         Diameter of the rotor in m. Default: None.
-    power_coefficient_curve : None, pandas.DataFrame or dictionary
+    power_coefficient_curve : None, :pandas:`pandas.DataFrame<frame>` or dictionary
         Power coefficient curve of the wind turbine. DataFrame/dictionary must
         have 'wind_speed' and 'value' columns/keys with wind speeds
         in m/s and the corresponding power coefficients. Default: None.
-    power_curve : None, pandas.DataFrame or dictionary
+    power_curve : None, :pandas:`pandas.DataFrame<frame>` or dictionary
         Power curve of the wind turbine. DataFrame/dictionary must have
         'wind_speed' and 'value' columns/keys with wind speeds in m/s and the
         corresponding power curve value in W. Default: None.
@@ -64,11 +64,11 @@ class WindTurbine(object):
         Hub height of the wind turbine in m.
     rotor_diameter : None or float
         Diameter of the rotor in m. Default: None.
-    power_coefficient_curve : None, pandas.DataFrame or dictionary
+    power_coefficient_curve : None, :pandas:`pandas.DataFrame<frame>` or dictionary
         Power coefficient curve of the wind turbine. DataFrame/dictionary must
         have 'wind_speed' and 'value' columns/keys with wind speeds
         in m/s and the corresponding power coefficients. Default: None.
-    power_curve : None, pandas.DataFrame or dictionary
+    power_curve : None, :pandas:`pandas.DataFrame<frame>` or dictionary
         Power curve of the wind turbine. DataFrame/dictionary must have
         'wind_speed' and 'value' columns/keys with wind speeds in m/s and the
         corresponding power curve value in W. Default: None.
@@ -210,11 +210,12 @@ def get_turbine_data_from_file(turbine_type, file_):
 
     Returns
     -------
-    tuple(pandas.DataFrame, float)
-        Power curve or power coefficient curve (pandas.DataFrame) and nominal
-        power (float). Power (coefficient) curve DataFrame contains power
-        coefficient curve values (dimensionless) or power curve values in W
-        as column names with the corresponding wind speeds in m/s.
+    tuple(:pandas:`pandas.DataFrame<frame>`, float)
+        Power curve or power coefficient curve
+        (:pandas:`pandas.DataFrame<frame>`) and nominal power (float). Power
+        (coefficient) curve DataFrame contains power coefficient curve values
+        (dimensionless) or power curve values in W as column names with the
+        corresponding wind speeds in m/s.
 
     Examples
     --------
@@ -303,11 +304,12 @@ def get_turbine_data_from_oedb(turbine_type, fetch_curve, overwrite=False):
 
     Returns
     -------
-    tuple(pandas.DataFrame, float)
-        Power curve or power coefficient curve (pandas.DataFrame) and nominal
-        power (float) of one wind turbine type. Power (coefficient) curve
-        DataFrame contains power coefficient curve values (dimensionless) or
-        power curve values in W with the corresponding wind speeds in m/s.
+    tuple(:pandas:`pandas.DataFrame<frame>`, float)
+        Power curve or power coefficient curve
+        (:pandas:`pandas.DataFrame<frame>`) and nominal power (float) of one
+        wind turbine type. Power (coefficient) curve DataFrame contains power
+        coefficient curve values (dimensionless) or power curve values in W
+        with the corresponding wind speeds in m/s.
 
     """
     filename = os.path.join(os.path.dirname(__file__), 'data',

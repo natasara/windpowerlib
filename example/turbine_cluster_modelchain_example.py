@@ -41,9 +41,9 @@ def initialize_wind_farms(my_turbine, e126):
 
     Parameters
     ----------
-    my_turbine : WindTurbine
+    my_turbine : :class:`~.wind_turbine.WindTurbine`
         WindTurbine object with self provided power curve.
-    e126 : WindTurbine
+    e126 : :class:`~.wind_turbine.WindTurbine`
         WindTurbine object with power curve from data file provided by the
         windpowerlib.
 
@@ -91,9 +91,9 @@ def initialize_wind_turbine_cluster(example_farm, example_farm_2):
 
     Parameters
     ----------
-    example_farm : WindFarm
+    example_farm : :class:`~.wind_farm.WindFarm`
         WindFarm object.
-    example_farm_2 : WindFarm
+    example_farm_2 : :class:`~.wind_farm.WindFarm`
         WindFarm object constant wind farm efficiency and coordinates.
 
     Returns
@@ -126,11 +126,11 @@ def calculate_power_output(weather, example_farm, example_cluster):
 
     Parameters
     ----------
-    weather : pd.DataFrame
+    weather : :pandas:`pandas.DataFrame<frame>`
         Contains weather data time series.
-    example_farm : WindFarm
+    example_farm : :class:`~.wind_farm.WindFarm`
         WindFarm object.
-    example_cluster : WindTurbineCluster
+    example_cluster : :class:`~.wind_turbine_cluster.'WindTurbineCluster`
         WindTurbineCluster object.
 
     """
@@ -189,9 +189,9 @@ def plot_or_print(example_farm, example_cluster):
 
     Parameters
     ----------
-    example_farm : WindFarm
+    example_farm : :class:`~.wind_farm.WindFarm`
         WindFarm object.
-    example_farm_2 : WindFarm
+    example_farm_2 : :class:`~.wind_farm.WindFarm`
         WindFarm object constant wind farm efficiency and coordinates.
 
     """

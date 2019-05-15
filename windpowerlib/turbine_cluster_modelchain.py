@@ -163,7 +163,7 @@ class TurbineClusterModelChain(ModelChain):
 
         Parameters
         ----------
-        weather_df : pandas.DataFrame
+        weather_df : :pandas:`pandas.DataFrame<frame>`
             DataFrame with time series for wind speed `wind_speed` in m/s, and
             roughness length `roughness_length` in m, as well as optionally
             temperature `temperature` in K, pressure `pressure` in Pa,
@@ -223,7 +223,7 @@ class TurbineClusterModelChain(ModelChain):
 
         Parameters
         ----------
-        weather_df : pandas.DataFrame
+        weather_df : :pandas:`pandas.DataFrame<frame>`
             DataFrame with time series for wind speed `wind_speed` in m/s, and
             roughness length `roughness_length` in m, as well as optionally
             temperature `temperature` in K, pressure `pressure` in Pa,
