@@ -348,7 +348,7 @@ class ModelChain(object):
             if self.power_plant.power_coefficient_curve is None:
                 raise TypeError("Power coefficient curve values of {} are "
                                 "missing.".format(self.power_plant))
-            logging.debug('Calculating power output using power coefficient '
+            logging.debug('lalalalaCalculating power output using power coefficient '
                           'curve.')
             return (power_output.power_coefficient_curve(
                         wind_speed_hub,
